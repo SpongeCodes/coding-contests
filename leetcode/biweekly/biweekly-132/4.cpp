@@ -40,7 +40,7 @@ public:
                 dp[i][j] = max(dp[i][j], 
                 1+(last.find(nums[i])==last.end()? 0:dp[last[nums[i]]][j]) );
                 if(j>0) dp[i][j] = max(dp[i][j], 1 + lengths[j-1] ); // this would be lengths[i-1][j-1]
-                lengths[j] = max(dp[i][j],lengths[j]); // this would become lengths[i][j]
+                lengths[j] = max(dp[i][j],lengths[j]); // this would become lengths[i][j] = max(dp[i][j], lengths[i-1][j])
             }
             last[nums[i]] = i;
        }
