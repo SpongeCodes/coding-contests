@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// there are more efficient solutions will add...
+
 class Solution {
 public:
     int maximumLength(vector<int>& nums, int k) {
