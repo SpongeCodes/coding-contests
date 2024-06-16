@@ -53,6 +53,32 @@ public:
        return max_dp;
     }
 };
+// ---------------------
+// O(N) memory maintaining entire dp array
+using ll = long long;
+class Solution {
+public:
+    long long maximumTotalDamage(vector<int>& power) {
+        // YOU NEED DP
+       int n = power.size();
+       ll max_dp=0;
+       long long dp[n];
+       sort(power.begin(),power.end());
+       dp[0] = power[0];
+       // YOU CAN USE 2 POINTERS
+       for (int i = 1, j = 0; i < power.size(); ++i) {
+            if(power[i]==power[i-1]) dp[i] = power[i]+dp[i-1];
+            // else go get max_dp upto i-2
+            else {
+                while(power[j]+2<power[i]) {
+                    max_dp = max(max_dp,dp[j++]);
+                }
+                dp[i] = power[i] + max_dp;
+            }
+       } 
+       return *max_element(dp, dp+n);
+    }
+};
 
 /**
  * PYTHON SOLUTION TAKE/NOT TAKE WILL NOT PASS IN CPP -CREDIT QIQI_IMPACT
