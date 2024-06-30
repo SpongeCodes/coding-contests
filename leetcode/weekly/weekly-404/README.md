@@ -18,3 +18,6 @@ My solution was to maintain dp[n][k] array where I stored:
  EDITORIAL SOLUTION: similar to mine but uses 1D array: will read further
 
 4. Utilized diameter and radius of tree concepts.
+    - Find the central point of the diameter of each tree (which will minimize the diameter of joined graph)
+    - take minimum of diameter of tree 1, tree 2 , and diameter formed in step 1
+    - radius (or half of diameter) can simply be calculated as ceil(diameter/2)
