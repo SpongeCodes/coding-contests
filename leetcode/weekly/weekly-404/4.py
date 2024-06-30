@@ -1,3 +1,6 @@
+#CREDIT TO QIQI_IMPACT
+# Repo link: https://github.com/qiqi-impact/cp/blob/master/leetcode-contest/weekly-404/4.py
+
 class Solution:
     def minimumDiameterAfterMerge(self, edges1: List[List[int]], edges2: List[List[int]]) -> int:
         def diam(edges):
