@@ -1,4 +1,4 @@
-LeetCode Weekly Contest 400 Editorial:
+LeetCode Weekly Contest 404 Editorial:
 
 1. brute force trying both cases where we start with BLUE or RED<br/>
 
