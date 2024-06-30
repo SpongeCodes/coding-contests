@@ -1,7 +1,9 @@
 LeetCode Weekly Contest 400 Editorial:
 
 1. brute force trying both cases where we start with BLUE or RED
-2 and 3. 
+
+
+2. 3. 
 - Get maximum length of subsequence where sum modulo k of all pairwise adjacent elements is equal
 My solution was to maintain dp[n][k] array where I stored:
  dp[i][j] = longest subsequence of adjacent pairwise sum = j ending at index j
