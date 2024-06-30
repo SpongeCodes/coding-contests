@@ -1,6 +1,7 @@
 LeetCode Weekly Contest 400 Editorial:
 
-1. brute force trying both cases where we start with BLUE or RED\
+1. brute force trying both cases where we start with BLUE or RED<br/>
+
 
 
 
