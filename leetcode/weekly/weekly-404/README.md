@@ -6,7 +6,9 @@ LeetCode Weekly Contest 404 Editorial:
 
 
 2 AND 3 . \
-Get maximum length of subsequence where sum modulo k of all pairwise adjacent elements is equal
+Get maximum length of subsequence where sum modulo k of all pairwise adjacent elements is equal.
+
+--
 My solution was to maintain dp[n][k] array where I stored:
  dp[i][j] = longest subsequence of adjacent pairwise sum = j ending at index j
 
