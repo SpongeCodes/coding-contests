@@ -15,6 +15,8 @@ My solution was to maintain dp[n][k] array where I stored:
  faster solution seems to fix the sum of first two elements of a subsequence and calculate max length for all pairs
  found.
 
+ -- TO ADD
+
  EDITORIAL SOLUTION: similar to mine but uses 1D array: will read further
 
 4. Utilized diameter and radius of tree concepts.
