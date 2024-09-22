@@ -1,3 +1,4 @@
+# passes in python but not in cpp for Q4
 class Solution:
     def validSubstringCount(self, a: str, b: str) -> int:
         a = [ord(c)-97 for c in a]
