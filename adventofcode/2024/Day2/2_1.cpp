@@ -12,19 +12,22 @@ int main() {
         bool f = true;
         string s;
         stringstream ss(line);
+        a.push_back(-1);
         while(getline(ss,s,' ')) {
             a.push_back(stoi(s));
         }
-        int n = a.size();
-        for(int i=1;i<n;i++) {
+        a.push_back(-1);
+        int n = a.size(),cnt=0;
+        for(int i=1;i<n-1;i++) {
+            int prev = a[i-1], next = a[i+1];
             if(a[i]==a[i-1]) {
-                f=false;
-                break;
+                a[i] = a[i-1];
+                cnt++;
             }
-            if(a[i]>a[i-1] && a[i] > a[i-1]+3) {
+            if(a[i] > a[i-1]+3) {
                 f= false; break;
             }
-            if(a[i]<a[i-1] && a[i] < a[i-1]-3) {
+            if(a[i] < a[i-1]-3) {
                 f= false; break;
             }
             if(i>1 && a[i-1]<a[i] && a[i-2]>a[i-1]) {
