@@ -11,3 +11,4 @@ The contests include
 5. CSES Problemset(planned)
 6. Meta Hacker cups
 7. Some SPOJ problems
+8. Advent of Code
